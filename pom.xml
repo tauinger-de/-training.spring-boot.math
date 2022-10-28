@@ -12,7 +12,7 @@
 
     <groupId>de.auinger.training.spring-boot</groupId>
     <artifactId>math</artifactId>
-    <version>020</version>
+    <version>000</version>
 
     <properties>
         <java.version>11</java.version>
