@@ -18,8 +18,8 @@ Legen Sie mithilfe des Spring Initializr ein neues Spring Boot Projekt an ("my-s
 3. Legen Sie eine Klasse `MathService` an. Diese hat eine Referenz auf beide oben angelegte Kalkulatoren und
    definiert eine Methode `int calculateTwoPlusThreeToThePowerOfFour()`, die Sie mithilfe der Kalkulatoren
    implementieren
-4. Legen Sie eine Klasse `DebugRunner` an, die eine Referenz auf `MathService` hat und dessen Methode aufruft und
-   das Ergebnis auf `System.out` schreibt
+4. Legen Sie eine Klasse `DebugRunner` an, die eine Referenz auf `MathService` hat. In einer `run()` Methode soll
+   der `MathService` aufgerufen werden und das Ergebnis auf `System.out` geschrieben werden
 
 ### Beans
 
@@ -28,3 +28,12 @@ Legen Sie mithilfe des Spring Initializr ein neues Spring Boot Projekt an ("my-s
 2. Lassen Sie den DebugRunner das Interface `CommandLineRunner` implementieren
 3. Starten Sie Ihre Spring Anwendung -- das Ergebnis der Berechnung sollte nun ausgegeben werden
 
+### Bonus Aufgabe
+
+1. Erweitern Sie den `MathService` um eine Methode `int calculateSumAndPower(int term1, int term2, int power)`
+2. Erstellen Sie einen `ParameterizedRunner`, der im Konstruktor die
+Parameter für beide Summanden (term1 und term2) sowie den Exponent (power)
+übernimmt und diese für die Ausführung seiner `run()` Methode zwischenspeichert
+3. In der `run()` Methode soll die neue `calculateSumAndPower()` Methode
+aufgerufen und das Ergebnis ausgegeben werden
+4. Lassen Sie Spring auch von diesem Runner eine Instanz erzeugen
