@@ -28,4 +28,3 @@ Legen Sie mithilfe des Spring Initializr ein neues Spring Boot Projekt an ("my-s
 2. Lassen Sie den DebugRunner das Interface `CommandLineRunner` implementieren
 3. Starten Sie Ihre Spring Anwendung -- das Ergebnis der Berechnung sollte nun ausgegeben werden
 
-## 030 Config
