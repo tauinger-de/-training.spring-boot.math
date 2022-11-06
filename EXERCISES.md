@@ -9,6 +9,13 @@ Legen Sie mithilfe des Spring Initializr ein neues Spring Boot Projekt an ("my-s
 - über die Website https://start.spring.io/ und Download der generierten Dateien geschehen
 - oder mithilfe Ihrer IDE, z.B. in Intellij via "File >> New >> Project..." und dann Auswahl "Spring Initializr" links
 
+Als Parameter für die Maven-spezifischen Werte sind denkbar:
+
+- GroupId "de.auinger.training.spring-boot"
+- ArtifactId "math"
+- Version "020"
+- Package "de.auinger.training.spring-boot.math"
+
 ### Klassen
 
 1. Legen Sie in dem neuen Projekt eine Klasse `SumCalculator` mit der Methode `int sum(int term1, int term2)` an
@@ -18,8 +25,8 @@ Legen Sie mithilfe des Spring Initializr ein neues Spring Boot Projekt an ("my-s
 3. Legen Sie eine Klasse `MathService` an. Diese hat eine Referenz auf beide oben angelegte Kalkulatoren und
    definiert eine Methode `int calculateTwoPlusThreeToThePowerOfFour()`, die Sie mithilfe der Kalkulatoren
    implementieren
-4. Legen Sie eine Klasse `DebugRunner` an, die eine Referenz auf `MathService` hat und dessen Methode aufruft und
-   das Ergebnis auf `System.out` schreibt
+4. Legen Sie eine Klasse `DebugRunner` mit einer Methode `run()` an. Diese Klasse hat eine Referenz auf
+   den `MathService` und ruft dessen Methode auf, um dann das Ergebnis auf `System.out` zu schreiben
 
 ### Beans
 
@@ -27,4 +34,5 @@ Legen Sie mithilfe des Spring Initializr ein neues Spring Boot Projekt an ("my-s
    und verdrahtet
 2. Lassen Sie den DebugRunner das Interface `CommandLineRunner` implementieren
 3. Starten Sie Ihre Spring Anwendung -- das Ergebnis der Berechnung sollte nun ausgegeben werden
+
 
