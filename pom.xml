@@ -12,7 +12,7 @@
 
     <groupId>de.auinger.training.spring-boot</groupId>
     <artifactId>math</artifactId>
-    <version>000</version>
+    <version>020</version>
 
     <properties>
         <java.version>11</java.version>
@@ -22,12 +22,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
