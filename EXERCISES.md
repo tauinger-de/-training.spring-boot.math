@@ -6,15 +6,22 @@
 
 Legen Sie mithilfe des Spring Initializr ein neues Spring Boot Projekt an ("my-spring-boot-project"). Dies kann
 
-- über die Website https://start.spring.io/ und Download der generierten Dateien geschehen
-- oder mithilfe Ihrer IDE, z.B. in Intellij via "File >> New >> Project..." und dann Auswahl "Spring Initializr" links
+- über die Website https://start.spring.io/ und ...
+  - Download der generierten ZIP Datei sowie ...
+  - Entpacken der ZIP Datei sowie ...
+  - Öffnen des Verzeichnisses in der IDE geschehen
+- oder mithilfe Ihrer IDE, z.B. in Intellij ULTIMATE via "File >> New >> Project..." und dann Auswahl "Spring
+  Initializr" links
 
 Als Parameter für die Maven-spezifischen Werte sind denkbar:
 
-- GroupId "de.auinger.training.spring-boot"
-- ArtifactId "math"
-- Version "020"
+- Group "de.auinger.training.spring-boot"
+- Artifact "math"
+- Name "math"
+- Description leer lassen
 - Package "de.auinger.training.spring-boot.math"
+- Packaging "jar"
+- Java "11"
 
 ### Klassen
 
