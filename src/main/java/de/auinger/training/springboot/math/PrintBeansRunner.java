@@ -1,4 +1,4 @@
-package de.auinger.training.springboot.demo;
+package de.auinger.training.springboot.math;
 
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
